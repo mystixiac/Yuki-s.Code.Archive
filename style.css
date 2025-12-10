@@ -1,0 +1,40 @@
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --accent:#7c3aed;
+  --muted:#94a3b8;
+  color-scheme: dark;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;
+  background:linear-gradient(180deg,#021024 0%, #07142b 100%);
+  color:#e6eef8;
+  min-height:100vh;
+  padding:24px;
+}
+.app{max-width:900px;margin:0 auto}
+header{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px}
+.hud{display:flex;gap:12px;align-items:center}
+.hud-controls{margin-left:12px}
+button{background:var(--accent);border:0;padding:8px 12px;border-radius:8px;color:white;cursor:pointer}
+button.secondary{background:transparent;border:1px solid rgba(255,255,255,0.06)}
+.gacha-panel{background:rgba(255,255,255,0.02);padding:16px;border-radius:12px;margin-bottom:16px}
+.pull-controls{display:flex;gap:12px;margin-bottom:12px}
+.result-area{margin-top:12px;padding:12px;background:rgba(255,255,255,0.02);border-radius:8px}
+.result-area.hidden{display:none}
+.result-item{display:inline-block;background:linear-gradient(180deg,rgba(255,255,255,0.02),rgba(255,255,255,0.01));padding:12px;border-radius:8px;margin:6px;min-width:120px;text-align:center;box-shadow:0 6px 18px rgba(0,0,0,0.5)}
+.rarity-5{border:2px solid #ffd700}
+.rarity-4{border:2px solid #9ad1ff}
+.rarity-3{border:2px solid #9fbf9f}
+.collection{background:rgba(255,255,255,0.02);padding:12px;border-radius:12px}
+.grid{display:flex;flex-wrap:wrap;gap:10px}
+.card{background:var(--card);padding:8px;border-radius:8px;min-width:120px;text-align:center}
+.pity{margin-top:8px;color:var(--muted)}
+footer{margin-top:18px;color:var(--muted);font-size:13px}
+
+/* small auth panel styles injected by script */
+#mini-auth-panel input { padding:6px; border-radius:6px; border:1px solid rgba(255,255,255,0.06); background: rgba(255,255,255,0.02); color: inherit; }
+#mini-auth-panel select { padding:6px; border-radius:6px; background: rgba(255,255,255,0.02); color: inherit; border:1px solid rgba(255,255,255,0.06); }
+#mini-admin-panel { padding:6px; border-radius:6px; }

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mini Gacha — Local Multi-Account</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header>
+      <h1>Mini Gacha</h1>
+      <!-- Auth UI is injected by main.js; header should exist so script can append controls -->
+    </header>
+
+    <div class="hud">
+      <div>Currency: <span id="currency">0</span> 💎</div>
+      <div class="hud-controls">
+        <button id="add-currency">+100</button>
+        <!-- change-admin-pw button is added by script if not present -->
+      </div>
+    </div>
+
+    <section class="gacha-panel">
+      <div class="pull-controls">
+        <button id="pull-1">Pull x1 (100)</button>
+        <button id="pull-10">Pull x10 (900)</button>
+      </div>
+
+      <div id="result-area" class="result-area hidden">
+        <div id="result-list" class="result-list"></div>
+        <button id="close-results">Close</button>
+      </div>
+
+      <div class="pity">Pity counter: <span id="pity">0</span></div>
+    </section>
+
+    <section class="collection">
+      <h2>Collection</h2>
+      <div id="collection-grid" class="grid"></div>
+    </section>
+
+    <footer>
+      <small>Client-only prototype for friends — edit main.js to change characters, rates and visuals.</small>
+    </footer>
+  </main>
+
+  <script src="main.js"></script>
+</body>
+</html>
